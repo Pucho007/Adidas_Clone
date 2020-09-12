@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('partial/head.html')%>    
+
+
+</head>
+
+<body>
+    <%- include('partial/navBar.html')%>
+
+    <div class="container" style="margin-top: 100px; margin-bottom: 20px;">
+        <div class="row">
+            <div class="col-8">
+                <h1>TU CARRITO <span>2 ARTÍCULOS</span></h1>
+                <div>
+                    <div class="alert alert-info" role="alert">
+                        <div style="width: 25px;height:25px;color: white;text-align: center;border-radius: 50%;" class="rounded-circle bg-primary float-left mr-3">i</div>
+                        <div>
+                            Ten en cuenta que los productos añadidos al carrito de compras no se reservan. Te recomendamos finalizar tu compra ahora, para asegurarte que tendrás los productos que ya has seleccionado.
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ARTICULOS -->
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/img_Productos/c0.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <h5>ZAPATILLAS ZABALO</h5>
+                        <p>Color: Core Black / Cloud White / Tech Emerald</p>
+                        <p>size: US H 10 / M 11</p>
+                        <a href="">Eliminar </a>
+                        <a href="">Mover a la lista de deseos</a>
+                    </div>
+                    <div class="col-3">
+                        <select class="">
+                            <option selected>1</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                        <span>S/. 259.00</span>
+                    </div>
+                </div>
+                <!-- /ARTICULOS -->
+
+                <button type="button" class="btn btn-dark">
+                    CONTINUAR
+                    <img src="img/img_Productos/FDB.png" class="ml-4">
+                    </button>
+            </div>
+
+
+
+
+            <div class="col-4">
+                <div class="resumen-pedido d-flex justify-content-center" style="background-color:#ebebeb;">
+                    <!-- Informe -->
+                    <div style="width: 90%;" class=" informe ">
+                        <button style="width: 100%;" type="button " class="btn btn-dark ">
+                    CONTINUAR
+                    <img src="img/img_Productos/FDB.png " class="ml-4 ">
+                    </button>
+                        <h4>RESUMEN DEL PEDIDO:</h4>
+
+                        <div class="card ">
+                            <ul class="list-group list-group-flush ">
+                                <li class="list-group-item ">2 PRODUCTOS</li>
+                                <li class="list-group-item ">Total del producto S/. 538.00 </li>
+                                <li class="list-group-item ">Entrega Gratis</li>
+                                <li class="list-group-item ">TotalS/. 538.00</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- / Informe -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('partial/footer.html')%>
+    <%- include('partial/scripts.html')%>
+</body>
+
+</html>
