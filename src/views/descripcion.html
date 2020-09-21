@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="../js/smooth-scroll.min.js"></script>
 
-    <%- include('partial/head.html')%>    
+    <%- include('partial/head.html')%>      
 
 </head>
 
@@ -14,109 +15,57 @@
 
     <%- include('partial/navBar.html')%>
 
-        <div class="row" style="margin-top:80px; margin-bottom: 100px;">
-
+    <div class="MARCO" style="margin-top:80px; margin-left: 10px;">
+        <div class="row">
             <!-- IMAGEN DETALLE -->
             <div class="col-8">
+    
                 <div id="d1" style="background-color:#ebebeb;" class="carrousel-contenido">
-                    <img src="img/img_Productos/FIN.png" alt=""> ATRAS
+                    <img src="../img/img_Products/flechaIzquierda.png" alt=""> ATRAS
                     <a href="">inicio</a> /
                     <a href="">originals</a> /
                     <a href="">calzado</a>
                     <!-- Carrousel -->
                     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
+                            <% productoElegido.imagenes.forEach((item)=>{ %>
                             <li style="width:30px;height: 30px;" data-target="#carouselExampleCaptions" data-slide-to="0">
-                                <img src="img/img_Productos/0.jpg" class="d-block w-100" alt="...">
+                                <img src="../img/img_Products/<%= item%>" class="d-block w-100" alt="...">
                             </li>
-                            <li style="width:30px;height: 30px;" data-target="#carouselExampleCaptions" data-slide-to="1">
-                                <img src="img/img_Productos/1.jpg" class="d-block w-100" alt="...">
-                            </li>
-                            <li style="width:30px;height: 30px;" data-target="#carouselExampleCaptions" data-slide-to="2">
-                                <img src="img/img_Productos/2.jpg" class="d-block w-100" alt="...">
-                            </li>
-                            <li style="width:30px;height: 30px;" data-target="#carouselExampleCaptions" data-slide-to="3">
-                                <img src="img/img_Productos/3.jpg" class="d-block w-100" alt="...">
-                            </li>
-                            <li style="width:30px;height: 30px;" data-target="#carouselExampleCaptions" data-slide-to="4">
-                                <img src="img/img_Productos/4.jpg" class="d-block w-100" alt="...">
-                            </li>
-                            <li style="width:30px;height: 30px;" data-target="#carouselExampleCaptions" data-slide-to="5">
-                                <img src="img/img_Productos/5.jpg" class="d-block w-100" alt="...">
-                            </li>
-                            <li style="width:30px;height: 30px;" data-target="#carouselExampleCaptions" data-slide-to="6">
-                                <img src="img/img_Productos/6.jpg" class="d-block w-100" alt="...">
-                            </li>
-                            <li style="width:30px;height: 30px;" data-target="#carouselExampleCaptions" data-slide-to="7">
-                                <img src="img/img_Productos/7.jpg" class="d-block w-100" alt="...">
-                            </li>
-                            <li style="width:30px;height: 30px;" data-target="#carouselExampleCaptions" data-slide-to="8">
-                                <img src="img/img_Productos/8.jpg" class="d-block w-100" alt="...">
-                            </li>
-
+                            <% })%>
                         </ol>
                         <div class="carousel-inner">
+                            <% productoElegido.imagenes.forEach((item)=>{ %>
                             <div class="carousel-item active">
-                                <img src="img/img_Productos/0.jpg" class="d-block w-100" alt="...">
+                                <img src="../img/img_Products/<%= item%>" class="d-block w-100" alt="...">
                             </div>
-
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/img_Productos/1.jpg" alt="Second slide">
-                            </div>
-
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/img_Productos/2.jpg" alt="Second slide">
-                            </div>
-
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/img_Productos/3.jpg" alt="Second slide">
-                            </div>
-
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/img_Productos/4.jpg" alt="Second slide">
-                            </div>
-
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/img_Productos/5.jpg" alt="Second slide">
-                            </div>
-
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/img_Productos/6.jpg" alt="Second slide">
-                            </div>
-
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/img_Productos/7.jpg" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="img/img_Productos/8.jpg" alt="Second slide">
-                            </div>
+                            <% })%>
                         </div>
-
-
+    
+    
                         <!-- Atras -->
                         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                             <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
                             <div style="width:50px;height:50px;background-color:white;border:1px solid black">
-                                <img src="img/img_Productos/FIN.png" style="height:50px;width:35px;">
+                                <img src="../img/img_Products/flechaIzquierda.png" style="height:50px;width:35px;">
                             </div>
                         </a>
                         <!-- /Atras -->
-
-
+                        
                         <!-- Siguiente -->
                         <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
                             <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
                             <div style="width:50px;height:50px;background-color:white;border:1px solid black">
-                                <img src="img/img_Productos/FDN.png" style="height:50px;width:35px;">
+                                <img src="../img/img_Products/flechaDerecha.png" style="height:50px;width:35px;">
                             </div>
                         </a>
                         <!-- /Siguiente -->
                     </div>
-
+    
                     <!-- / Carrousel -->
-
+    
                 </div>
-
+    
                 <div class=" Angulo-Imagenes ">
                     <div class="d-flex justify-content-center ">
                         <a data-scroll href="#d1" role="button">GALERIA</a>
@@ -126,83 +75,86 @@
                     </div>
                     <hr>
                 </div>
-
-                <!-- DESCRIPCION -->
-                <div id="d2" class="row ">
-                    <div class="col-6 ">
-                        <h3>ZAPATILLAS SABALO</h3>
-                        <h6>ZAPATILLAS INSPIRADAS EN LA FOTOGRAFÍA OJO DE PEZ DEL MUNDO DEL SKATE</h6>
-                        <p>Si eres skater, lo eres para siempre. Aunque solo lo seas de corazón. La emoción de ver imágenes espectaculares y descubrir nuevos trucos y skaters puede que haya quedado en el pasado, pero la nostalgia vive en estas zapatillas
-                            adidas. Sus líneas de corte curvas evocan las fotografías tomadas con lentes ojo de pez que todavía nos inspiran hoy.</p>
-                    </div>
-                    <div class="col-6 ">
-                        <img src="img/img_Productos/4.jpg " class="img-fluid ">
-                    </div>
-                </div>
-
-                <!-- DETALLES -->
-                <h1 id="d3">DETALLES</h1>
-                <div class="row ">
-
-                    <div class="col-6 ">
-                        <li>Sistema de amarre de pasadores</li>
-                        <li>Exterior en gamuza</li>
-                        <li>Puntera Adituff resistente al desgaste</li>
-                        <li>Zapatillas de skate flexibles</li>
-                    </div>
-                    <div class="col-6 ">
-                        <li>Suela Geoflex flexible de gran agarre</li>
-                        <li>Color del artículo: Core Black / Cloud White / Tech Emerald</li>
-                        <li>Número de artículo: FV0694</li>
+                <div class="descripcionContainer" style="margin-top: 30px; margin-bottom: 20px;">
+                    <!-- DESCRIPCION -->
+                    <div id="d2" class="row ">
+                        <div class="col-6 ">
+                            <h3><%= productoElegido.nombre%></h3>
+                            <h6>ZAPATILLAS INSPIRADAS EN LA FOTOGRAFÍA OJO DE PEZ DEL MUNDO DEL SKATE</h6>
+                            <p><%= productoElegido.descripcion%></p>
+                        </div>
+                        <div class="col-6 ">
+                            <img src="../img/img_Products/<%= productoElegido.imagenes[0]%>" class="img-fluid ">
+                        </div>
                     </div>
                 </div>
-
-
-                <!-- TAMBIÉN PODRÍA INTERESARTE -->
-                <h1 id="d4">TAMBIÉN PODRÍA INTERESARTE</h1>
-                <div class="row ">
-                    <div class="col-3 ">
-                        <img src="img/img_Productos/v0.jpg " class="img-fluid ">
-                    </div>
-                    <div class="col-3 ">
-                        <img src="img/img_Productos/v1.jpg " class="img-fluid ">
-                    </div>
-                    <div class="col-3 ">
-                        <img src="img/img_Productos/v2.jpg " class="img-fluid ">
-                    </div>
-                    <div class="col-3 ">
-                        <img src="img/img_Productos/v3.jpg " class="img-fluid ">
+                <div class="detallesContainer" style="margin-bottom: 40px;">
+                    <!-- DETALLES -->
+                    <h1 id="d3">DETALLES</h1>
+                    <div class="row ">
+                
+                        <div class="col-6 ">
+                            <li>Sistema de amarre de pasadores</li>
+                            <li>Exterior en gamuza</li>
+                            <li>Puntera Adituff resistente al desgaste</li>
+                            <li>Zapatillas de skate flexibles</li>
+                        </div>
+                        <div class="col-6 ">
+                            <li>Suela Geoflex flexible de gran agarre</li>
+                            <li>Color del artículo: Core Black / Cloud White / Tech Emerald</li>
+                            <li>Número de artículo: FV0694</li>
+                        </div>
                     </div>
                 </div>
-
+    
+                <div class="detallesOtros" style="margin-bottom: 40px;">
+                    <!-- TAMBIÉN PODRÍA INTERESARTE -->
+                    <h1 id="d4">TAMBIÉN PODRÍA INTERESARTE</h1>
+                    <div class="row ">
+                        <div class="col-3 ">
+                            <img src="../img/img_Products/v0.jpg " class="img-fluid ">
+                        </div>
+                        <div class="col-3 ">
+                            <img src="../img/img_Products/v1.jpg " class="img-fluid ">
+                        </div>
+                        <div class="col-3 ">
+                            <img src="../img/img_Products/v2.jpg " class="img-fluid ">
+                        </div>
+                        <div class="col-3 ">
+                            <img src="../img/img_Products/v3.jpg " class="img-fluid ">
+                        </div>
+                    </div>
+                </div>
+    
             </div>
             <!-- / IMAGEN DETALLE -->
-
+    
+    
+    
 
             <!-- CONTENIDO DETALLE -->
             <div class="col-4 ">
-                <div class="container" style="margin:auto">
+                <div style=" position: fixed; " class="contenido ">
                     originals
-                    <h2>ZAPATILLAS SABALO</h2>
-                    <p>CORE BLACK / CLOUD WHITE / TECH EMERALD</p>
-                    <span>S/.259</span>
+                    <h2><%= productoElegido.nombre%></h2>
+                    <% productoElegido.etiquetas.forEach((item)=>{ %>
+                    <p style="display: inline;"> <%= item%> / </p>
+                    <% })%>
+                    <p><%= productoElegido.precio%><p>
                     <button type="button " class="btn btn-dark ">
-                    AÑADIR AL CARRITO 
-                    <img src="img/img_Productos/FDB.png " class="ml-4 ">
+                        AÑADIR AL CARRITO
+                        <img src="../img/img_Products/flechaIzquierdaOpaco.png " class="ml-4 ">
                     </button>
                 </div>
-
-
+    
+    
             </div>
             <!-- /CONTENIDO DETALLE -->
         </div>
-
-
-        <!-- Para el scroll -->
-        <script src="js/smooth-scroll.min.js"></script>
+    </div>
 
     <%- include('partial/footer.html')%>
-    <%- include('partial/scripts.html')%> 
+    <%- include('partial/scripts.html')%>
 </body>
 
 </html>

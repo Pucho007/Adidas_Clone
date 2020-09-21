@@ -1,0 +1,66 @@
+[
+    {
+        "_id":1,
+        "nombre":"Camiseta Colombia",
+        "precio":150,
+        "imagenes":[
+            "camisetaColombia.png"
+        ],
+        "descripcion": "Camiseta Oficial de la Seleccion Colombiana de Futbol 2018 - Rusia 2018",
+        "marca":"Adidas",
+        "tallas":[
+            "S","M","L","XL"
+        ],
+        "etiquetas":[
+            "Hombre","Futbol","Training","Sport","Mujer"
+        ]
+    },
+    {
+        "_id":2,
+        "nombre":"Polo con cuello camisa White",
+        "precio":60,
+        "imagenes":[
+            "poloAdidas.png"
+        ],
+        "descripcion": "Polo color blanco, sencillo, simple y elegante",
+        "marca":"Adidas",
+        "tallas":[
+            "S","M"
+        ],
+        "etiquetas":[
+            "Hombre","Niño"
+        ]
+    },
+    {
+        "_id":3,
+        "nombre":"Sudadera clasica Adidas Black",
+        "precio":80,
+        "imagenes":[
+            "sudaderaAdidas.png"
+        ],
+        "descripcion": "Sudadera negra con estampado de Adidas",
+        "marca":"Adidas",
+        "tallas":[
+            "M","L","XL"
+        ],
+        "etiquetas":[
+            "Hombre","Futbol","Mujer"
+        ]
+    },
+    {
+        "_id":4,
+        "nombre":"Zapatillas SuperStar Red",
+        "precio":200,
+        "imagenes":[
+            "zapatillasAdidas.png"
+        ],
+        "descripcion": "Zapatillas modelo SuperStar color rojo",
+        "marca":"Adidas",
+        "tallas":[
+            39,40,41,42
+        ],
+        "etiquetas":[
+            "Hombre","Futbol","Training","Sport","Mujer"
+        ]
+    }
+]

@@ -18,127 +18,31 @@
         </div>
         <!-- Card deck -->
         <div class="row row-cols-1 row-cols-md-4" style="margin-top: 20px; margin-left: 20px; margin-right: 20px;">
+            <% productos.forEach(function(producto) { %>
             <div class="col mb-4">
+                
                 <!-- Card -->
-                <div class="card mb-4">
+                <div class="card mb-4 ">
                     <!--Card image-->
                     <div class="view overlay">
-                        <img class="card-img-top" src="img/img_Cards/poloAdidas01.png" alt="Card image cap">
-                        <a href="/descripcion">
+                        <img class="card-img-top" src="img/img_Cards/<%=producto.imagenes[0] %>" alt="Card image cap">
+                        <a href="/producto/<%= producto._id%>">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
                     <!--Card content-->
                     <div class="card-body">
                         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                        <p class="card-text" style="font-size: 10px; opacity: .5;">etiqueta1 etiqueta2</p>
-                        <h6 class="card-title">PRODUCTO</h6>
-                        <p class="card-text" style="font-size: 10px; opacity: .5;">S/. precio</p>
+                        <% producto.etiquetas.forEach((item)=>{ %>
+                        <p class="card-text" style="font-size: 10px; opacity: .5; display: inline;"><%=item %></p>
+                        <% })%>
+                        <h6 class="card-title" style=""><%=producto.nombre %></h6>
+                        <p class="card-text" style="font-size: 10px; opacity: .5;">S/. <%=producto.precio %></p>
                     </div>
                 </div>
                 <!-- Card -->
             </div>
-            <div class="col mb-4">
-                <!-- Card -->
-                <div class="card mb-4">
-                    <!--Card image-->
-                    <div class="view overlay">
-                        <img class="card-img-top" src="img/img_Cards/poloAdidas01.png" alt="Card image cap">
-                        <a href="/descripcion">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <!--Card content-->
-                    <div class="card-body">
-                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                        <p class="card-text" style="font-size: 10px; opacity: .5;">etiqueta1 etiqueta2</p>
-                        <h6 class="card-title">PRODUCTO</h6>
-                        <p class="card-text" style="font-size: 10px; opacity: .5;">S/. precio</p>
-                    </div>
-                </div>
-                <!-- Card -->
-            </div>
-            <div class="col mb-4">
-                <!-- Card -->
-                <div class="card mb-4">
-                    <!--Card image-->
-                    <div class="view overlay">
-                        <img class="card-img-top" src="img/img_Cards/poloAdidas01.png" alt="Card image cap">
-                        <a href="/descipcion">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <!--Card content-->
-                    <div class="card-body">
-                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                        <p class="card-text" style="font-size: 10px; opacity: .5;">etiqueta1 etiqueta2</p>
-                        <h6 class="card-title">PRODUCTO</h6>
-                        <p class="card-text" style="font-size: 10px; opacity: .5;">S/. precio</p>
-                    </div>
-                </div>
-                <!-- Card -->
-            </div>
-            <div class="col mb-4">
-                <!-- Card -->
-                <div class="card mb-4">
-                    <!--Card image-->
-                    <div class="view overlay">
-                        <img class="card-img-top" src="img/img_Cards/poloAdidas01.png" alt="Card image cap">
-                        <a href="/descripcion">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <!--Card content-->
-                    <div class="card-body">
-                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                        <p class="card-text" style="font-size: 10px; opacity: .5;">etiqueta1 etiqueta2</p>
-                        <h6 class="card-title">PRODUCTO</h6>
-                        <p class="card-text" style="font-size: 10px; opacity: .5;">S/. precio</p>
-                    </div>
-                </div>
-                <!-- Card -->
-            </div>
-            <div class="col mb-4">
-                <!-- Card -->
-                <div class="card mb-4">
-                    <!--Card image-->
-                    <div class="view overlay">
-                        <img class="card-img-top" src="img/img_Cards/poloAdidas01.png" alt="Card image cap">
-                        <a href="/descripcion">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <!--Card content-->
-                    <div class="card-body">
-                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                        <p class="card-text" style="font-size: 10px; opacity: .5;">etiqueta1 etiqueta2</p>
-                        <h6 class="card-title">PRODUCTO</h6>
-                        <p class="card-text" style="font-size: 10px; opacity: .5;">S/. precio</p>
-                    </div>
-                </div>
-                <!-- Card -->
-            </div>
-            <div class="col mb-4">
-                <!-- Card -->
-                <div class="card mb-4">
-                    <!--Card image-->
-                    <div class="view overlay">
-                        <img class="card-img-top" src="img/img_Cards/poloAdidas01.png" alt="Card image cap">
-                        <a href="/descripcion">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <!--Card content-->
-                    <div class="card-body">
-                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                        <p class="card-text" style="font-size: 10px; opacity: .5;">etiqueta1 etiqueta2</p>
-                        <h6 class="card-title">PRODUCTO</h6>
-                        <p class="card-text" style="font-size: 10px; opacity: .5;">S/. precio</p>
-                    </div>
-                </div>
-                <!-- Card -->
-            </div>
-
+            <% })%>
         </div>
     </div>
     
