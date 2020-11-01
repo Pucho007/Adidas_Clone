@@ -1,0 +1,62 @@
+.content-index{
+    margin-top: 65px;
+}
+
+.content-covid{
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #F3F0F0;
+}
+
+.content-covid a p{
+    font-size: 17px;
+    font-weight:bold ;
+    text-decoration: underline;
+    display: inline-block;
+}
+.content-covid a p:hover{
+    color: white;
+    background-color: black;
+}
+
+.carousel-inner img{
+    height: 860px;
+}
+
+.ofertas{
+    padding-top: 60px;
+    height: 250px;
+    background-color:#F93232 ;
+    text-align: center;
+    color: white;
+}
+
+.ofertas h2{
+    font-weight: bold;
+}
+
+.ofertas button{
+    font-weight: bold;
+}
+
+.row .col .card .view{
+    height: 500px;
+}
+
+.historia{
+    background-color: #F3F0F0;
+    padding: 50px 0;
+    text-align: justify;
+
+}
+
+.fila-historia{
+    padding-right: 60px;
+}
+
+.title-historia{
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
