@@ -16,7 +16,8 @@
     <%- include('partial/navBar.html')%>
 
     <div class="MARCO" style="margin-top:80px; margin-left: 10px;">
-        <div class="row">
+    
+      <div class="row">
             <!-- IMAGEN DETALLE -->
             <div class="col-8">
     
@@ -25,46 +26,65 @@
                     <a href="">inicio</a> /
                     <a href="">originals</a> /
                     <a href="">calzado</a>
-                    <!-- Carrousel -->
-                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <% productoElegido.imagenes.forEach((item)=>{ %>
-                            <li style="width:30px;height: 30px;" data-target="#carouselExampleCaptions" data-slide-to="0">
-                                <img src="../img/img_Products/<%= item%>" class="d-block w-100" alt="...">
-                            </li>
-                            <% })%>
-                        </ol>
-                        <div class="carousel-inner">
-                            <% productoElegido.imagenes.forEach((item)=>{ %>
-                            <div class="carousel-item active">
-                                <img src="../img/img_Products/<%= item%>" class="d-block w-100" alt="...">
+                    
+                        <!--Carousel Wrapper-->
+                        <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+                            <!--Indicators-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="4"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="5"></li>
+                            </ol>
+                            <!--/.Indicators-->
+
+                            <!--Slides-->
+                            <div class="carousel-inner" role="listbox">
+                                <!--First slide-->
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="../img/img_Cards/<%= productoElegido.imagenes[0]%>" alt="First slide">
+                                </div>
+                                <!--/First slide-->
+                                <!--Second slide-->
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="../img/img_Cards/<%= productoElegido.imagenes[1]%>" alt="Second slide">
+                                </div>
+                                <!--/Second slide-->
+                                <!--Third slide-->
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="../img/img_Cards/<%= productoElegido.imagenes[2]%>" alt="Third slide">
+                                </div>
+                                <!--/Third slide-->
+                                <!--Second slide-->
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="../img/img_Cards/<%= productoElegido.imagenes[3]%>" alt="Second slide">
+                                </div>
+                                <!--/Second slide-->
+                                <!--Third slide-->
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="../img/img_Cards/<%= productoElegido.imagenes[4]%>" alt="Third slide">
+                                </div>
+                                <!--/Third slide-->
+                            
                             </div>
-                            <% })%>
+                            <!--/.Slides-->
+
+                            <!--Controls-->
+                            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            <!--/.Controls-->
                         </div>
-    
-    
-                        <!-- Atras -->
-                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-                            <div style="width:50px;height:50px;background-color:white;border:1px solid black">
-                                <img src="../img/img_Products/flechaIzquierda.png" style="height:50px;width:35px;">
-                            </div>
-                        </a>
-                        <!-- /Atras -->
-                        
-                        <!-- Siguiente -->
-                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-                            <div style="width:50px;height:50px;background-color:white;border:1px solid black">
-                                <img src="../img/img_Products/flechaDerecha.png" style="height:50px;width:35px;">
-                            </div>
-                        </a>
-                        <!-- /Siguiente -->
+                        <!--/.Carousel Wrapper-->
+                    
                     </div>
-    
-                    <!-- / Carrousel -->
-    
-                </div>
     
                 <div class=" Angulo-Imagenes ">
                     <div class="d-flex justify-content-center ">
@@ -75,7 +95,8 @@
                     </div>
                     <hr>
                 </div>
-                <div class="descripcionContainer" style="margin-top: 30px; margin-bottom: 20px;">
+
+                <div class="descripcionContainer" style="margin: 30px  30px">
                     <!-- DESCRIPCION -->
                     <div id="d2" class="row ">
                         <div class="col-6 ">
@@ -84,11 +105,11 @@
                             <p><%= productoElegido.descripcion%></p>
                         </div>
                         <div class="col-6 ">
-                            <img src="../img/img_Products/<%= productoElegido.imagenes[0]%>" class="img-fluid ">
+                            <img src="../img/img_Cards/<%= productoElegido.imagenes[0]%>" class="img-fluid ">
                         </div>
                     </div>
                 </div>
-                <div class="detallesContainer" style="margin-bottom: 40px;">
+                <div class="detallesContainer" style="margin: 30px  30px">
                     <!-- DETALLES -->
                     <h1 id="d3">DETALLES</h1>
                     <div class="row ">
@@ -107,7 +128,7 @@
                     </div>
                 </div>
     
-                <div class="detallesOtros" style="margin-bottom: 40px;">
+                <div class="detallesOtros" style="margin: 30px  30px">
                     <!-- TAMBIÉN PODRÍA INTERESARTE -->
                     <h1 id="d4">TAMBIÉN PODRÍA INTERESARTE</h1>
                     <div class="row ">

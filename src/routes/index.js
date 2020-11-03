@@ -15,10 +15,15 @@ router.get('/producto', async(req, res) => {
 });
 
 
+
 router.get('/producto/:id',async(req,res)=>{
     const {id}=req.params;
     const productoElegido=await producto.findById(id);
    res.render('descripcion.html',{productoElegido});
+});
+
+router.get('/carousel',(req,res)=>{
+   res.render('descripcionPrueba.html');
 })
 
 

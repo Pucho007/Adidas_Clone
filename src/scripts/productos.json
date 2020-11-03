@@ -4,7 +4,11 @@
         "nombre":"Camiseta Colombia",
         "precio":150,
         "imagenes":[
-            "camisetaColombia.png"
+            "camisetaColombia.png",
+            "camisetaColombia1.png",
+            "camisetaColombia2.png",
+            "camisetaColombia3.png",
+            "camisetaColombia4.png"
         ],
         "descripcion": "Camiseta Oficial de la Seleccion Colombiana de Futbol 2018 - Rusia 2018",
         "marca":"Adidas",
@@ -20,7 +24,11 @@
         "nombre":"Polo con cuello camisa White",
         "precio":60,
         "imagenes":[
-            "poloAdidas.png"
+            "poloAdidas.png",
+            "poloAdidas1.png",
+            "poloAdidas2.png",
+            "poloAdidas3.png",
+            "poloAdidas4.png"            
         ],
         "descripcion": "Polo color blanco, sencillo, simple y elegante",
         "marca":"Adidas",
@@ -31,36 +39,25 @@
             "Hombre","Niño"
         ]
     },
+
     {
         "_id":3,
-        "nombre":"Sudadera clasica Adidas Black",
-        "precio":80,
+        "nombre":"TERCERA CAMISETA BOCA JUNIORS 20/21",
+        "precio":229,
         "imagenes":[
-            "sudaderaAdidas.png"
+            "bocaAdidas.png",
+            "bocaAdidas2.png",
+            "bocaAdidas3.png",
+            "bocaAdidas4.png",
+            "bocaAdidas5.png"
         ],
-        "descripcion": "Sudadera negra con estampado de Adidas",
+        "descripcion": "UNA CAMISETA DE FÚTBOL EN COLORES ÚNICOS PARA LOS HINCHAS DE BOCA JUNIORS",
         "marca":"Adidas",
         "tallas":[
-            "M","L","XL"
+            "XS","S","L","XL"
         ],
         "etiquetas":[
-            "Hombre","Futbol","Mujer"
-        ]
-    },
-    {
-        "_id":4,
-        "nombre":"Zapatillas SuperStar Red",
-        "precio":200,
-        "imagenes":[
-            "zapatillasAdidas.png"
-        ],
-        "descripcion": "Zapatillas modelo SuperStar color rojo",
-        "marca":"Adidas",
-        "tallas":[
-            39,40,41,42
-        ],
-        "etiquetas":[
-            "Hombre","Futbol","Training","Sport","Mujer"
+            "Hombre","Futbol","Training","Sport"
         ]
     }
 ]
