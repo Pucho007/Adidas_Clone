@@ -1,0 +1,24 @@
+.content-covid{
+    height: auto;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #F3F0F0;
+}
+
+.content-covid a p{
+    align-items: center;
+    font-size: 17px;
+    font-weight:bold ;
+    text-decoration: underline;
+    display: inline-block;
+}
+.content-covid a p:hover{
+    color: white;
+    background-color: black;
+}
+
+@media(max-width:400px){
+    .content-covid a p{
+        font-size: 11px;
+    }
+}

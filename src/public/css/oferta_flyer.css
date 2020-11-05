@@ -1,0 +1,52 @@
+/*OFERTAS COVID */
+
+.ofertas{
+    padding: 20px 10px;
+    height: auto;
+    background-color:#F93232 ;
+    text-align: center;
+    color: white;
+}
+
+.ofertas h2{
+    font-weight: bold;
+}
+
+.ofertas p{
+    margin: 0.5%;
+}
+
+.ofertas button{
+    padding: 1%;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+}
+
+
+
+@media(max-width:400px){
+
+    .ofertas{
+        padding: 10px 10px;
+        
+    }
+
+    .ofertas h2{
+        font-size: 14px;
+    }
+
+    .ofertas p{
+        font-size: 9px;
+    }
+
+    .ofertas button{
+
+        font-size: 8px;
+    }
+    .ofertas img{
+
+        width: 20px;
+        height: 20px;
+    }
+}

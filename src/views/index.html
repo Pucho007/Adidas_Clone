@@ -10,9 +10,7 @@
 <body>
   <%- include('partial/navBar.html')%>
   <div class="content-index">
-    <div class="content-covid">
-      <a href="#" style="color: black;"> <p> COVID-19 | Ver más sobre nuestros tiempos y servicios.</p></a>
-    </div>
+    <%- include('partial/covid_flyer.html')%>
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -41,14 +39,7 @@
       </a>
     </div>
   
-  <div class="ofertas">
-    <h2>HASTA 40% DE DESCUENTO</h2>
-    <p>¡Llegaron las ofertas de mitad de temporada! Aprovecha hasta 40% de descuento en el catálogo seleccionado.</p>
-    <button type="button" class="btn btn-white  waves-effect waves-light">
-      COMPRAR AHORA 
-      <img src="img/img_Products/flechaDerecha.png" alt="flecha" class="ml-4 ">
-    </button>
-  </div>
+    <%- include('partial/oferta_flyer.html')%>
 
     <!-- Card deck -->
     <div class="card-deck" style="margin-top: 30px; margin-left: 20px; margin-right: 20px;">
@@ -153,63 +144,9 @@
       </div>
     </div>
 
-    <!--- table    -->
-    <div class="historia">
-      <table class="container">
-        <tr>
-          <td class="fila-historia">
-            <p class="title-historia">HISTORIA, MODA Y ROPA DEPORTIVA ADIDAS DESDE 1949</p>
-            El deporte nos mantiene en forma. Te mantiene atento. Nos une. A través del deporte podemos cambiar vidas.
-            Ya sea a través de historias de atletas inspiradores. Animándote a ponerte en marcha. Ofreciéndote artículos
-            deportivos con las últimas tecnologías para mejorar tu rendimiento. Supera tu mejor marca personal.
-            adidas es el hogar del corredor, del jugador de básquet, del joven futbolista y del entusiasta del fitness.
-            Del aventurero que escapa de la ciudad los fines de semana. De la instructora de yoga que enseña nuevas
-            posturas.
-            Las 3 Tiras se ven en el mundo de la música. En el escenario, en los festivales. Nuestra ropa deportiva para
-            mujer
-            y para hombre te mantiene concentrado antes de que suene el silbato. Durante la carrera. Y en la línea de
-            meta.
-            Estamos aquí para apoyar a los creadores. Mejorar su juego. Sus vidas. Y cambiar el mundo.
-          </td>
-          <td class="fila-historia">
-            <p class="title-historia">TU TIENDA DEPORTIVA PARA CUALQUIER DEPORTE</p>
-            adidas diseña ropa deportiva para atletas de todo tipo. Creadores que disfrutan de cambiar las reglas del
-            juego.
-            Desafiar las convenciones. Romper las normas y definir nuevas. Y volverlas a romper. Confeccionamos la ropa
-            sport
-            que visten equipos y jugadores individuales en preparación para el partido. Para que no pierdan la
-            concentración.
-            Diseñamos indumentaria deportiva para que llegues a la meta. Para que ganes el partido. Nuestras tiendas
-            deportivas
-            ofrecen atuendos para mujeres, con tops deportivos y licras diseñados con un objetivo en mente. Para
-            deportes de
-            impacto bajo, medio o alto. Diseñamos, innovamos e inspiramos. Ponemos a prueba nuevas tecnologías. En el
-            campo,
-            en la cancha, en la pista, en la piscina. La ropa deportiva retro inspira nuevos elementos esenciales de la
-            ropa
-            urbana. Como las NMD y los buzos Firebird. Los modelos deportivos clásicos vuelven a la vida. Como las Stan
-            Smith y
-            las Superstar. Ahora en todas las calles y en los escenarios más destacados.
-          </td>
-        </tr>
-      </table>
-    </div>
 
-    <div class="suscripcion">
-      <table class="container">
-        <tr>
-          <td class="frase-suscripcion">
-            <h2>SUSCRIBETE, ENTERATE DE LAS NOVEDADES Y OBTEN UN 15% DE DESCUENTO</h2>
-          </td>
-          <td class="botom-suscripcion">
-            <button type="button" class="btn btn-black  waves-effect waves-light">
-              Suscribete a nuevos productos
-              <img src="img/img_Products/flechaIzquierdaOpaco.png" alt="flecha" class="ml-4 ">
-            </button>
-          </td>
-        </tr>
-      </table>
-    </div>
+    <%- include('partial/historia_flyer.html')%>
+    <%- include('partial/suscripcion_flyer.html')%>
 
   </div>
 

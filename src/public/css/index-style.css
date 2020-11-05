@@ -1,101 +1,14 @@
 .content-index{
-    margin-top: 65px;
+    margin-top: 66px;
 }
 
-.content-covid{
-    height: 60px;
-    text-align: center;
-    padding-top: 20px;
-    background-color: #F3F0F0;
-}
-
-.content-covid a p{
-    font-size: 17px;
-    font-weight:bold ;
-    text-decoration: underline;
-    display: inline-block;
-}
-.content-covid a p:hover{
-    color: white;
-    background-color: black;
-}
-
-.carousel-inner img{
-    height: 860px;
-}
-
-/*OFERTAS COVID */
-.ofertas{
-    padding-top: 60px;
-    height: 250px;
-    background-color:#F93232 ;
-    text-align: center;
-    color: white;
-}
-
-.ofertas h2{
-    font-weight: bold;
-}
-
-.ofertas button{
-    font-weight: bold;
+@media(max-width:400px){
+    .content-index{
+        margin-top: 59px;
+    }
 }
 
 
-/*SUSCRIPCIP FONDO AMARILLO*/
-
-.suscripcion{
-    padding: 40px 0;
-    height: 200px;
-    background-color:#F3CF4A ;
-    color: white;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
 
 
-.suscripcion h2{
-    font-weight: bold;
-
-}
-
-.suscripcion button{
-    font-weight: bold;
-}
-
-
-.suscripcion tr .frase-suscripcion{
-    text-align: left;
-    color: black;
-    width: 500px;
-
-}
-
-.suscripcion tr .botom-suscripcion button{
-    margin-right: 100px;
-    width: 400px;
-    color: white;
-}
-
-
-.row .col .card .view{
-    height: 500px;
-}
-
-.historia{
-    background-color: #F3F0F0;
-    padding: 50px 0;
-    text-align: justify;
-
-}
-
-.fila-historia{
-    padding-right: 60px;
-}
-
-.title-historia{
-    padding-bottom: 10px;
-    font-weight: bold;
-}
 

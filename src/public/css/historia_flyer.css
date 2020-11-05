@@ -1,0 +1,21 @@
+.historia{
+    background-color: #F3F0F0;
+    padding: 50px 50px;
+    text-align: start;
+
+}
+
+.fila-historia{
+    padding-right: 60px;
+}
+
+.title-historia{
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+@media(max-width:400px){
+    .historia{
+        display: none;
+    }
+}
