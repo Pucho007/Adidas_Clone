@@ -1,4 +1,4 @@
-window.addEventListener('scroll',()=>{
+/*window.addEventListener('scroll',()=>{
   
     const scrollY=window.scrollY;
 
@@ -9,4 +9,4 @@ window.addEventListener('scroll',()=>{
         navbar.style.height=900;
         console.log(navbar.style);
     }
-})
+})*/

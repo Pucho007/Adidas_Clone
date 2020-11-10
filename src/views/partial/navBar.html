@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/styleNavBar.css">
+  <link rel="stylesheet" href="css/carrito.css">
+
+  <%- include('head.html')%>    
+
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-white scrolling-navbar fixed-top">
@@ -40,9 +44,16 @@
           <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Buscar" aria-label="Search">
           <button type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
         </form>
+        <div class="submenu">
+          <a href="#"><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
+          <div id="carrito"> 
+            <h3>TU CARRITO ESTA VACIO </h3>    
+          </div>
+        </div>
       </div>
     </div>
   </nav>
     <script src="../js/scroll.js"></script>
+    <script src="../js/carrito.js"></script>
 </body>
 </html>

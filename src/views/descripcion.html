@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="../js/smooth-scroll.min.js"></script>
-
     <%- include('partial/head.html')%>      
 
 </head>
@@ -32,11 +31,9 @@
                             <!--Indicators-->
                             <ol class="carousel-indicators">
                                 <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-                                <li data-target="#carousel-example-1z" data-slide-to="3"></li>
-                                <li data-target="#carousel-example-1z" data-slide-to="4"></li>
-                                <li data-target="#carousel-example-1z" data-slide-to="5"></li>
+                                <% for(var i=1;i<productoElegido.imagenes.length;i++){ %>
+                                <li data-target="#carousel-example-1z" data-slide-to="<%= i%>"></li>
+                                <% }%>
                             </ol>
                             <!--/.Indicators-->
 
@@ -48,26 +45,13 @@
                                 </div>
                                 <!--/First slide-->
                                 <!--Second slide-->
+                                <% for(var i=1;i<productoElegido.imagenes.length;i++){ %>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="../img/img_Cards/<%= productoElegido.imagenes[1]%>" alt="Second slide">
+                                    <img class="d-block w-100" src="../img/img_Cards/<%= productoElegido.imagenes[i]%>" alt="Second slide">
                                 </div>
+                                <% }%>
                                 <!--/Second slide-->
-                                <!--Third slide-->
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../img/img_Cards/<%= productoElegido.imagenes[2]%>" alt="Third slide">
-                                </div>
-                                <!--/Third slide-->
-                                <!--Second slide-->
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../img/img_Cards/<%= productoElegido.imagenes[3]%>" alt="Second slide">
-                                </div>
-                                <!--/Second slide-->
-                                <!--Third slide-->
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="../img/img_Cards/<%= productoElegido.imagenes[4]%>" alt="Third slide">
-                                </div>
-                                <!--/Third slide-->
-                            
+    
                             </div>
                             <!--/.Slides-->
 
@@ -86,7 +70,7 @@
                     
                     </div>
     
-                <div class=" Angulo-Imagenes ">
+                <div class="Angulo-Imagenes">
                     <div class="d-flex justify-content-center ">
                         <a data-scroll href="#d1" role="button">GALERIA</a>
                         <a data-scroll href="#d2" role="button">DESCRIPCION</a>
